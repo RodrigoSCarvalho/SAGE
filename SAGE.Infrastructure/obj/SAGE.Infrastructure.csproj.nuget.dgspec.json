@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/rodrigo/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj": {}
+    "/home/rodri/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj": {}
   },
   "projects": {
-    "/home/rodrigo/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj": {
+    "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rodrigo/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj",
-        "projectName": "SAGE.Infrastructure",
-        "projectPath": "/home/rodrigo/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj",
-        "packagesPath": "/home/rodrigo/.nuget/packages/",
-        "outputPath": "/home/rodrigo/Documents/SAGE/SAGE.Infrastructure/obj/",
+        "projectUniqueName": "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj",
+        "projectName": "SAGE.Domain",
+        "projectPath": "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj",
+        "packagesPath": "/home/rodri/.nuget/packages/",
+        "outputPath": "/home/rodri/Documents/SAGE/SAGE.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/rodrigo/.nuget/NuGet/NuGet.Config"
+          "/home/rodri/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +53,92 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.118/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/rodri/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/rodri/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj",
+        "projectName": "SAGE.Infrastructure",
+        "projectPath": "/home/rodri/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj",
+        "packagesPath": "/home/rodri/.nuget/packages/",
+        "outputPath": "/home/rodri/Documents/SAGE/SAGE.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/rodri/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj": {
+                "projectPath": "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentMigrator": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "FluentMigrator.Runner": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.118/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

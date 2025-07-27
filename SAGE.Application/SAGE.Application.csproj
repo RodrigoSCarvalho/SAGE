@@ -3,6 +3,11 @@
   <ItemGroup>
     <ProjectReference Include="..\SAGE.Domain\SAGE.Domain.csproj" />
     <ProjectReference Include="..\SAGE.Infrastructure\SAGE.Infrastructure.csproj" />
+    <ProjectReference Include="..\SAGE.Persistence\SAGE.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="13.0.0" />
   </ItemGroup>
 
   <PropertyGroup>

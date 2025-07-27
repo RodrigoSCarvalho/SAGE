@@ -9,10 +9,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.16" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="9.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SAGE.Application\SAGE.Application.csproj" />
+    <ProjectReference Include="..\SAGE.Infrastructure\SAGE.Infrastructure.csproj" />
   </ItemGroup>
+
 
 </Project>

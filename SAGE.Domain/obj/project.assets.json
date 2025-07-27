@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/rodrigo/.nuget/packages/": {}
+    "/home/rodri/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rodrigo/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj",
+      "projectUniqueName": "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj",
       "projectName": "SAGE.Domain",
-      "projectPath": "/home/rodrigo/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj",
-      "packagesPath": "/home/rodrigo/.nuget/packages/",
-      "outputPath": "/home/rodrigo/Documents/SAGE/SAGE.Domain/obj/",
+      "projectPath": "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj",
+      "packagesPath": "/home/rodri/.nuget/packages/",
+      "outputPath": "/home/rodri/Documents/SAGE/SAGE.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/rodrigo/.nuget/NuGet/NuGet.Config"
+        "/home/rodri/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,11 +38,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -64,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.118/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
