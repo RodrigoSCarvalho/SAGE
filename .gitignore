@@ -1,3 +1,4 @@
 bin/\nobj/\n*.user\n*.suo\n.vscode/
 bin/
 obj/
+.env

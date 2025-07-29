@@ -4,6 +4,6 @@ namespace SAGE.Domain.Interfaces
 {
   public interface IChangePlanRepository
   {
-    Task AddSync(ChangePlan plan);
+    Task AddAsync(ChangePlan plan);
   }
 }
