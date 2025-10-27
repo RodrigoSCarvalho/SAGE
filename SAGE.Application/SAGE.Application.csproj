@@ -3,15 +3,16 @@
   <ItemGroup>
     <ProjectReference Include="..\SAGE.Domain\SAGE.Domain.csproj" />
     <ProjectReference Include="..\SAGE.Infrastructure\SAGE.Infrastructure.csproj" />
-    <ProjectReference Include="..\SAGE.Persistence\SAGE.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="15.0.1" />
+    <PackageReference Include="Autofac" Version="8.4.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
     <PackageReference Include="MediatR" Version="13.0.0" />
+    <PackageReference Include="MediatR.Extensions.Autofac.DependencyInjection" Version="13.1.0" />
   </ItemGroup>
 
   <PropertyGroup>

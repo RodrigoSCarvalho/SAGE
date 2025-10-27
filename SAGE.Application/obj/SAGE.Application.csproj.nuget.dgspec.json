@@ -1,36 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/rodri/Documents/SAGE/SAGE.Application/SAGE.Application.csproj": {}
+    "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Application\\SAGE.Application.csproj": {}
   },
   "projects": {
-    "/home/rodri/Documents/SAGE/SAGE.Application/SAGE.Application.csproj": {
+    "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Application\\SAGE.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rodri/Documents/SAGE/SAGE.Application/SAGE.Application.csproj",
+        "projectUniqueName": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Application\\SAGE.Application.csproj",
         "projectName": "SAGE.Application",
-        "projectPath": "/home/rodri/Documents/SAGE/SAGE.Application/SAGE.Application.csproj",
-        "packagesPath": "/home/rodri/.nuget/packages/",
-        "outputPath": "/home/rodri/Documents/SAGE/SAGE.Application/obj/",
+        "projectPath": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Application\\SAGE.Application.csproj",
+        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/rodri/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj": {
-                "projectPath": "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj"
+              "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Domain\\SAGE.Domain.csproj": {
+                "projectPath": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Domain\\SAGE.Domain.csproj"
               },
-              "/home/rodri/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj": {
-                "projectPath": "/home/rodri/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj"
+              "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Infrastructure\\SAGE.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Infrastructure\\SAGE.Infrastructure.csproj"
               }
             }
           }
@@ -39,7 +45,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -47,11 +59,15 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[15.0.1, )"
+              "version": "[12.0.1, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[8.4.0, )"
             },
             "FluentValidation": {
               "target": "Package",
@@ -64,6 +80,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[13.0.0, )"
+            },
+            "MediatR.Extensions.Autofac.DependencyInjection": {
+              "target": "Package",
+              "version": "[13.1.0, )"
             }
           },
           "imports": [
@@ -82,26 +102,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.118/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj": {
+    "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Domain\\SAGE.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Domain\\SAGE.Domain.csproj",
         "projectName": "SAGE.Domain",
-        "projectPath": "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj",
-        "packagesPath": "/home/rodri/.nuget/packages/",
-        "outputPath": "/home/rodri/Documents/SAGE/SAGE.Domain/obj/",
+        "projectPath": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Domain\\SAGE.Domain.csproj",
+        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/rodri/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -114,7 +140,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -135,34 +167,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.118/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/rodri/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj": {
+    "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Infrastructure\\SAGE.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rodri/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Infrastructure\\SAGE.Infrastructure.csproj",
         "projectName": "SAGE.Infrastructure",
-        "projectPath": "/home/rodri/Documents/SAGE/SAGE.Infrastructure/SAGE.Infrastructure.csproj",
-        "packagesPath": "/home/rodri/.nuget/packages/",
-        "outputPath": "/home/rodri/Documents/SAGE/SAGE.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Infrastructure\\SAGE.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/rodri/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj": {
-                "projectPath": "/home/rodri/Documents/SAGE/SAGE.Domain/SAGE.Domain.csproj"
+              "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Domain\\SAGE.Domain.csproj": {
+                "projectPath": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Domain\\SAGE.Domain.csproj"
               }
             }
           }
@@ -171,12 +209,26 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Elastic.Clients.Elasticsearch": {
+              "target": "Package",
+              "version": "[9.2.0, )"
+            },
             "FluentMigrator": {
               "target": "Package",
               "version": "[7.1.0, )"
@@ -187,13 +239,21 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.7, )"
+              "version": "[9.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.7, )"
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             },
             "Npgsql": {
               "target": "Package",
@@ -220,7 +280,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.118/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

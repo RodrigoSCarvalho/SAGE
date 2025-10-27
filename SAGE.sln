@@ -9,21 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAGE.Domain", "SAGE.Domain\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAGE.Infrastructure", "SAGE.Infrastructure\SAGE.Infrastructure.csproj", "{106C1E56-D465-46E3-8151-54D41508BABA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAGE.Entrypoint", "SAGE.Entrypoint\SAGE.Entrypoint.csproj", "{BF27A802-CDE2-4BA7-B28D-F9FDD54360E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAGE.API", "SAGE.API\SAGE.API.csproj", "{BF27A802-CDE2-4BA7-B28D-F9FDD54360E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0BF4BC85-422D-4D1A-810A-28299534481F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0BF4BC85-422D-4D1A-810A-28299534481F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0BF4BC85-422D-4D1A-810A-28299534481F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0BF4BC85-422D-4D1A-810A-28299534481F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{09C4F241-F720-4440-9918-9C9572FA1AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{09C4F241-F720-4440-9918-9C9572FA1AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09C4F241-F720-4440-9918-9C9572FA1AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -40,5 +33,8 @@ Global
 		{BF27A802-CDE2-4BA7-B28D-F9FDD54360E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF27A802-CDE2-4BA7-B28D-F9FDD54360E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF27A802-CDE2-4BA7-B28D-F9FDD54360E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

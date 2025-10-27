@@ -1,4 +1,25 @@
 bin/\nobj/\n*.user\n*.suo\n.vscode/
 bin/
 obj/
+.vs
+
 .env
+.env.local
+.env.*.local
+*.env
+
+# Docker
+docker-compose.override.yml
+
+# User Secrets
+**/obj/
+**/bin/
+
+# Database backups
+*.sql
+*.dump
+!scripts/init-db.sql
+
+# Logs
+logs/
+*.log

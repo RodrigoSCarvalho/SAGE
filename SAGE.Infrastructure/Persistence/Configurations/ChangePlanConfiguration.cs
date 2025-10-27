@@ -4,15 +4,16 @@ using SAGE.Domain.ChangePlans;
 
 namespace SAGE.Infrastructure.Persistence.Configurations
 {
-  public class ChangePlanConfiguration : IEntityTypeConfiguration<ChangePlan>
-  {
-    public void Configure(EntityTypeBuilder<ChangePlan> builder)
+    public class ChangePlanConfiguration : IEntityTypeConfiguration<ChangePlan>
     {
-      builder.HasKey(cp => cp.Id);
-      builder.Property(cp => cp.Title).IsRequired().HasMaxLength(255);
-      builder.Property(cp => cp.Description).HasMaxLength(500);
-      builder.Property(cp => cp.CreatedAt).IsRequired();
-      builder.Property(cp => cp.CreatedBy).IsRequired();
+        public void Configure(EntityTypeBuilder<ChangePlan> builder)
+        {
+            builder.ToTable("ChangePlans");
+            builder.HasKey(cp => cp.Id);
+            builder.Property(cp => cp.Title).IsRequired().HasMaxLength(255);
+            builder.Property(cp => cp.Description).HasMaxLength(5000);
+            builder.Property(cp => cp.CreatedAt).IsRequired();
+            builder.Property(cp => cp.CreatedBy).IsRequired();
+        }
     }
-  }
 }
