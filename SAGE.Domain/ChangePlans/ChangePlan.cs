@@ -25,7 +25,7 @@ public class ChangePlan : AggregateRoot<Guid>
 
         if (string.IsNullOrWhiteSpace(description))
             throw new ArgumentException("Descrição não pode ser vazia.", nameof(description));
-        
+
         if (createdBy == Guid.Empty)
             throw new ArgumentException("Cirador inválido.", nameof(createdBy));
 

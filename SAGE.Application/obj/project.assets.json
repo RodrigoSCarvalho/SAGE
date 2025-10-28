@@ -92,34 +92,31 @@
           }
         }
       },
-      "Elastic.Clients.Elasticsearch/9.2.0": {
+      "Elastic.Clients.Elasticsearch/8.11.0": {
         "type": "package",
         "dependencies": {
-          "Elastic.Transport": "0.10.1"
+          "Elastic.Transport": "0.4.16"
         },
         "compile": {
-          "lib/net8.0/Elastic.Clients.Elasticsearch.dll": {
+          "lib/net6.0/Elastic.Clients.Elasticsearch.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Elastic.Clients.Elasticsearch.dll": {
+          "lib/net6.0/Elastic.Clients.Elasticsearch.dll": {
             "related": ".xml"
           }
         }
       },
-      "Elastic.Transport/0.10.1": {
+      "Elastic.Transport/0.4.16": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0"
-        },
         "compile": {
-          "lib/net8.0/Elastic.Transport.dll": {
+          "lib/net6.0/Elastic.Transport.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net8.0/Elastic.Transport.dll": {
+          "lib/net6.0/Elastic.Transport.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -1337,7 +1334,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Autofac": "8.4.0",
-          "Elastic.Clients.Elasticsearch": "9.2.0",
+          "Elastic.Clients.Elasticsearch": "8.11.0",
           "FluentMigrator": "7.1.0",
           "FluentMigrator.Runner": "7.1.0",
           "Microsoft.EntityFrameworkCore": "9.0.4",
@@ -1447,23 +1444,25 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "Elastic.Clients.Elasticsearch/9.2.0": {
-      "sha512": "0AMAau2kTn6GCrWPvS477IH0lbVia2Zsnv3WqYUgnEEPmjoGgVnQBNrlzP5N0bF+dU0/sNkHREE47t6diBE31Q==",
+    "Elastic.Clients.Elasticsearch/8.11.0": {
+      "sha512": "23bmifGdlvvDSuNNw0e3bkENl7toDAoUxy/F8HhCHWu3Qf4MZDfYSI3HpXLtoDtjsdo7k9HtjtBYjbuEUxemPg==",
       "type": "package",
-      "path": "elastic.clients.elasticsearch/9.2.0",
+      "path": "elastic.clients.elasticsearch/8.11.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "README.md",
-        "elastic.clients.elasticsearch.9.2.0.nupkg.sha512",
+        "elastic.clients.elasticsearch.8.11.0.nupkg.sha512",
         "elastic.clients.elasticsearch.nuspec",
-        "lib/net462/Elastic.Clients.Elasticsearch.dll",
-        "lib/net462/Elastic.Clients.Elasticsearch.xml",
-        "lib/net8.0/Elastic.Clients.Elasticsearch.dll",
-        "lib/net8.0/Elastic.Clients.Elasticsearch.xml",
-        "lib/net9.0/Elastic.Clients.Elasticsearch.dll",
-        "lib/net9.0/Elastic.Clients.Elasticsearch.xml",
+        "lib/net461/Elastic.Clients.Elasticsearch.dll",
+        "lib/net461/Elastic.Clients.Elasticsearch.xml",
+        "lib/net5.0/Elastic.Clients.Elasticsearch.dll",
+        "lib/net5.0/Elastic.Clients.Elasticsearch.xml",
+        "lib/net6.0/Elastic.Clients.Elasticsearch.dll",
+        "lib/net6.0/Elastic.Clients.Elasticsearch.xml",
+        "lib/netcoreapp3.1/Elastic.Clients.Elasticsearch.dll",
+        "lib/netcoreapp3.1/Elastic.Clients.Elasticsearch.xml",
         "lib/netstandard2.0/Elastic.Clients.Elasticsearch.dll",
         "lib/netstandard2.0/Elastic.Clients.Elasticsearch.xml",
         "lib/netstandard2.1/Elastic.Clients.Elasticsearch.dll",
@@ -1471,21 +1470,21 @@
         "nuget-icon.png"
       ]
     },
-    "Elastic.Transport/0.10.1": {
-      "sha512": "8qUyxd4LzMiR+wtNEzdHHnu+iEpbKfoA001NyYgZZT0YZaNE9fWmFeZMxcTz7HMcYUidZSeT6vvongjZh1j/hQ==",
+    "Elastic.Transport/0.4.16": {
+      "sha512": "O2LHqnQTWAF0+cic9zYkZJ8m95cG9AnkRbwkRZogroWXZHh8oY5ewVsQsF+wwNHs/YWnNIBTq/7yqaFklBB/Wg==",
       "type": "package",
-      "path": "elastic.transport/0.10.1",
+      "path": "elastic.transport/0.4.16",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "elastic.transport.0.10.1.nupkg.sha512",
+        "elastic.transport.0.4.16.nupkg.sha512",
         "elastic.transport.nuspec",
         "lib/net462/Elastic.Transport.dll",
         "lib/net462/Elastic.Transport.pdb",
         "lib/net462/Elastic.Transport.xml",
-        "lib/net8.0/Elastic.Transport.dll",
-        "lib/net8.0/Elastic.Transport.pdb",
-        "lib/net8.0/Elastic.Transport.xml",
+        "lib/net6.0/Elastic.Transport.dll",
+        "lib/net6.0/Elastic.Transport.pdb",
+        "lib/net6.0/Elastic.Transport.xml",
         "lib/netstandard2.0/Elastic.Transport.dll",
         "lib/netstandard2.0/Elastic.Transport.pdb",
         "lib/netstandard2.0/Elastic.Transport.xml",
@@ -3325,6 +3324,7 @@
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Autofac >= 8.4.0",
+      "Elastic.Clients.Elasticsearch >= 8.11.0",
       "FluentValidation >= 12.0.0",
       "FluentValidation.DependencyInjectionExtensions >= 12.0.0",
       "MediatR >= 13.0.0",
@@ -3402,6 +3402,10 @@
             "target": "Package",
             "version": "[8.4.0, )"
           },
+          "Elastic.Clients.Elasticsearch": {
+            "target": "Package",
+            "version": "[8.11.0, )"
+          },
           "FluentValidation": {
             "target": "Package",
             "version": "[12.0.0, )"
@@ -3435,7 +3439,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

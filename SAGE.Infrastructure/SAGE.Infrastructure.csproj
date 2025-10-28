@@ -6,7 +6,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Autofac" Version="8.4.0" />
-		<PackageReference Include="Elastic.Clients.Elasticsearch" Version="9.2.0" />
+		<PackageReference Include="Elastic.Clients.Elasticsearch" Version="8.11.0" />
 		<PackageReference Include="FluentMigrator" Version="7.1.0" />
 		<PackageReference Include="FluentMigrator.Runner" Version="7.1.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />

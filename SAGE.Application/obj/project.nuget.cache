@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D/XItUHIrFo=",
+  "dgSpecHash": "sd1ON6pChRc=",
   "success": true,
   "projectFilePath": "C:\\Users\\rodri\\Source\\Repos\\SAGE\\SAGE.Application\\SAGE.Application.csproj",
   "expectedPackageFiles": [
@@ -9,8 +9,8 @@
     "C:\\Users\\rodri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
-    "C:\\Users\\rodri\\.nuget\\packages\\elastic.clients.elasticsearch\\9.2.0\\elastic.clients.elasticsearch.9.2.0.nupkg.sha512",
-    "C:\\Users\\rodri\\.nuget\\packages\\elastic.transport\\0.10.1\\elastic.transport.0.10.1.nupkg.sha512",
+    "C:\\Users\\rodri\\.nuget\\packages\\elastic.clients.elasticsearch\\8.11.0\\elastic.clients.elasticsearch.8.11.0.nupkg.sha512",
+    "C:\\Users\\rodri\\.nuget\\packages\\elastic.transport\\0.4.16\\elastic.transport.0.4.16.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\firebirdsql.data.firebirdclient\\10.3.2\\firebirdsql.data.firebirdclient.10.3.2.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\fluentmigrator\\7.1.0\\fluentmigrator.7.1.0.nupkg.sha512",
     "C:\\Users\\rodri\\.nuget\\packages\\fluentmigrator.abstractions\\7.1.0\\fluentmigrator.abstractions.7.1.0.nupkg.sha512",

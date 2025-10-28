@@ -1,8 +1,8 @@
 ﻿using Autofac;
 using FluentValidation;
-using System.Reflection;
 using MediatR.Extensions.Autofac.DependencyInjection;
 using MediatR.Extensions.Autofac.DependencyInjection.Builder;
+using System.Reflection;
 
 namespace SAGE.Application.DependencyInjection;
 

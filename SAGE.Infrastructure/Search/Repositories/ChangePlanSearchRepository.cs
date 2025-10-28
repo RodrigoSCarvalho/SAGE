@@ -24,7 +24,9 @@ public class ChangePlanSearchRepository : IChangePlanSearchRepository
 
             var response = await _client.IndexAsync(document, idx => idx
                 .Index(IndexName)
-                .Id(document.Id.ToString()), cancellationToken);
+                .Id(document.Id.ToString())
+                .Refresh(Refresh.WaitFor),
+                cancellationToken);
 
             if (!response.IsValidResponse)
             {
@@ -88,20 +90,32 @@ public class ChangePlanSearchRepository : IChangePlanSearchRepository
         {
             var from = (page - 1) * pageSize;
 
-            var response = await _client.SearchAsync<ChangePlanDocument>(s => s
-                .Indices(IndexName)
-                .From(from)
-                .Size(pageSize)
-                .Query(q => q
-                    .MultiMatch(m => m
-                        .Query(searchTerm)
-                        .Fields(new[] { "title", "description", "searchText" })
-                        .Fuzziness(new Fuzziness("AUTO"))
-                    )
-                ).Sort(so => so
-                .Score(s => s.Order(SortOrder.Desc))
-                .Field(f => f.Field(d => d.CreatedAt).Order(SortOrder.Desc))
-                ), cancellationToken);
+            var response = await _client.SearchAsync<ChangePlanDocument>(s =>
+            {
+                s.Indices(IndexName)
+                    .From(from)
+                    .Size(pageSize);
+
+                if(string.IsNullOrEmpty(searchTerm) || searchTerm == "*")
+                {
+                    s.Query(q => q
+                        .MatchAll()
+                    );
+                }
+                else
+                {
+                    s.Query(q => q
+                        .MultiMatch(mm => mm
+                            .Query(searchTerm)
+                            .Fields(new [] { "title^2", "description", "searchText" })
+                            .Fuzziness( new Fuzziness("AUTO"))
+                        )
+                    );
+                }
+                s.Sort(so => so
+                    .Field(f => f.CreatedAt, new FieldSort { Order = SortOrder.Desc })
+                );
+            }, cancellationToken);
 
             if (!response.IsValidResponse)
             {
@@ -153,20 +167,34 @@ public class ChangePlanSearchRepository : IChangePlanSearchRepository
 
             if (tags?.Any() == true)
             {
-                mustQueries.Add(new TermsQuery { Field = "tags.keyword", Terms = new TermsQueryField(tags.Select(t => FieldValue.String(t)).ToArray())});
+                mustQueries.Add(new TermsQuery { Field = "tags.keyword", Terms = new TermsQueryField(tags.Select(t => FieldValue.String(t)).ToArray()) });
             }
 
-            var response = await _client.SearchAsync<ChangePlanDocument>(s => s
-                .Indices(IndexName)
-                .From(from)
-                .Size(pageSize)
-                .Query(q => q
-                    .Bool(b => b
-                        .Must(mustQueries.ToArray())
-                    )
-                ).Sort(so => so
-                .Field(f => f.Field(d => d.CreatedAt).Order(SortOrder.Desc))
-                ), cancellationToken);
+            var response = await _client.SearchAsync<ChangePlanDocument>(s =>
+            {
+                s.Indices(IndexName)
+                    .From(from)
+                    .Size(pageSize);
+
+                if (mustQueries.Any())
+                {
+                    s.Query(q => q
+                        .Bool(b => b
+                            .Must(mustQueries.ToArray())
+                        )
+                    );
+                }
+                else
+                {
+                    s.Query(q => q
+                        .MatchAll()
+                    );
+                }
+
+                s.Sort(so => so
+                    .Field(f => f.CreatedAt, new FieldSort { Order = SortOrder.Desc })
+                );
+            }, cancellationToken);
 
             if (!response.IsValidResponse)
             {

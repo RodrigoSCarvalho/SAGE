@@ -8,7 +8,9 @@ public class ChangePlanProfile : Profile
 {
     public ChangePlanProfile()
     {
-        CreateMap<ChangePlan, ChangePlanResponseDto>();
+        CreateMap<ChangePlan, ChangePlanResponseDto>()
+            .ForMember(dest => dest.Status, opt => opt.MapFrom(src => "ative"))
+            .ForMember(dest => dest.Tags, opt => opt.MapFrom(src => new List<string>()));
         CreateMap<ChangePlanDocument, ChangePlanResponseDto>();
     }
 }

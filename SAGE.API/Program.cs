@@ -5,6 +5,7 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using SAGE.API.Middleware;
 using SAGE.Application.ChangePlans.Commands.CreateChangePlan;
 using SAGE.Application.ChangePlans.Mappings;
 using SAGE.Application.DependencyInjection;
@@ -127,6 +128,7 @@ app.UseExceptionHandler(errorApp =>
          }
      });
 });
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseHttpsRedirection();
 app.UseCors("AllowFrontEnd");
 
